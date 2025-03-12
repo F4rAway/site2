@@ -1,0 +1,1880 @@
+
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; /* Цвет текста для контраста */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, .language-button {
+    text-decoration: none;
+    color: #fff; /* Цвет текста для контраста */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.language-button:hover {
+    background-color: #d23c29;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right p {
+    margin: 0 10px;
+    color: #fff; /* Цвет текста для контраста */
+}
+
+.book-button, .find-button, .details-button {
+    background-color: #d23c29;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.details-button {
+    background-color: #4b0082;
+}
+
+.details-button:hover {
+    background-color: #800080;
+}
+
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+}
+
+.hotels {
+    padding: 20px;
+    text-align: center;
+}
+
+.hotels h2 {
+    margin-bottom: 20px;
+}
+
+.hotel-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.hotel-card h3 {
+    margin-top: 0;
+}
+
+.hotel-card p {
+    margin: 5px 0;
+}
+
+.room-details {
+    display: flex;
+    padding: 20px;
+}
+
+.room-info {
+    margin-left: 20px;
+}
+
+.room-info h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #4b0082; /* Темно-фиолетовый фон для футера */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #4b0082;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #d23c29;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.booking-form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    flex: 1;
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-group input, .form-group select {
+    flex: 2;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 120px);
+}
+.about-hotel {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 20px;
+    color: #fff;
+}
+
+.about-hotel h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-hotel ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-hotel li {
+    margin-bottom: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Светло-серый фон */
+    color: #333; /* Темно-серый цвет текста */
+}
+
+header {
+    background-color: #222; /* Темно-серый фон для шапки */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /*font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; /* Цвет текста для контраста */
+    width: 150px; /* Задайте ширину логотипа */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.logo img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, .language-button {
+    text-decoration: none;
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #aaa; 
+}
+
+.language-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.language-button:hover {
+    background-color: #555;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right p {
+    margin: 0 10px;
+    color: #fff; 
+}
+
+.book-button, .find-button, .details-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.book-button:hover, .find-button:hover {
+    background-color: #333;
+}
+
+.details-button {
+    background-color: #444;
+}
+
+.details-button:hover {
+    background-color: #666;
+}
+
+.hero {
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    display: inline-flex;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+}
+
+.hotels {
+    padding: 20px;
+    text-align: center;
+}
+
+.hotels h2 {
+    margin-bottom: 20px;
+}
+
+.hotel-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card h3 {
+    margin-top: 0;
+}
+
+.hotel-card p {
+    margin: 5px 0;
+}
+
+.room-details {
+    display: flex;
+    padding: 20px;
+}
+
+.room-info {
+    margin-left: 20px;
+}
+
+.room-info h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222; 
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+   
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #555;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #d23c29;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.booking-form {
+    background: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    flex: 1;
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right: 10px;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    flex: 2;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 120px);
+}
+.actions-hotel {
+    padding: 20px;
+    background: #fff; 
+    border-radius: 5px;
+    margin: 20px;
+    color: #333;
+}
+
+.actions-hotel h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.action-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.action-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.rooms-hotel {
+    padding: 20px;
+    background: #fff; 
+    border-radius: 5px;
+    margin: 20px;
+    color: #333;
+}
+
+.rooms-hotel h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.room-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.room-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.room-card img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+.services-hotel {
+    padding: 20px;
+    background: #fff; 
+    border-radius: 5px;
+    margin: 20px;
+    color: #333;
+}
+
+.services-hotel h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-hotel ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+.services-hotel li {
+    margin-bottom: 5px;
+}
+.restaurant-hotel {
+    padding: 20px;
+    background: #fff; 
+    border-radius: 5px;
+    margin: 20px;
+    color: #333;
+}
+
+.restaurant-hotel h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.restaurant-hotel h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.restaurant-hotel h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.restaurant-hotel ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.restaurant-hotel li {
+    margin-bottom: 5px;
+}
+.hotel-description {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    color: #333;
+}
+
+.hotel-description h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hotel-description img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.details-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    display: inline-block; /* Чтобы работали padding и margin */
+}
+
+.details-button:hover {
+    background-color: #666;
+}
+/* Стили для кнопок регистрации и входа */
+.header-auth {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Добавьте отступ слева при необходимости */
+}
+
+.register-button, .login-button {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    margin-left: 5px; /* Расстояние между кнопками */
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover, .login-button:hover {
+    background-color: #333;
+}
+
+/* Стили для форм регистрации и входа */
+.register-form, .login-form {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.register-form h1, .login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form label, .login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-form input, .login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-form button, .login-form button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-form button:hover, .login-form button:hover {
+    background-color: #333;
+}
+
+.register-form p, .login-form p {
+    text-align: center;
+    margin-top: 10px;
+}/* Стили для кнопки "На главную" */
+.back-to-home {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #333;
+}
+
+/* Дополнительные стили для размещения в шапке */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Можно настроить отступы */
+}
+.details-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    display: inline-block; /* Чтобы работали padding и margin */
+}
+
+.details-button:hover {
+    background-color: #666;
+}/* Стили для контейнера кнопки "На главную" */
+.back-to-home-container {
+    text-align: center; /* Центрируем кнопку */
+    margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+/* Стили для кнопки "На главную" */
+.back-to-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home-button:hover {
+    background-color: #333;
+}
+.details-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    display: inline-block; /* Чтобы работали padding и margin */
+}
+
+.details-button:hover {
+    background-color: #666;
+}
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стили для основного контента */
+main {
+    padding: 20px;
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    /* Стили для шапки */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Стили для основного контента */
+    main {
+        padding: 10px;
+    }
+}
+/* Общие стили для шапки */
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #000; /* Черный цвет */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    margin-left: 20px;
+    color: #000; /* Черный цвет */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right p {
+    color: #000; /* Черный цвет */
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .header-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header-right p {
+        font-size: 14px;
+    }
+}
+/* Стили для подвала */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #000; /* Черный цвет */
+    text-decoration: none; /* Убрать подчеркивание */
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #333; /* Более темный цвет при наведении */
+}
+/* Стили для страницы "Ресторан" */
+.restaurant-hero {
+    background-image: url("restaurant-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu-categories ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-categories li {
+    margin: 0 10px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #ffffff7e;
+}
+/* Вариант 1: Фон для всего тела страницы */
+body {
+    background-color: #ffffff7e; /* Sienna */
+    /* Другие стили для body */
+}
+
+/* Вариант 2: Фон только для основного контента (если нужно) */
+main {
+    background-color: #ffffff7e; /* Sienna */
+    /* Другие стили для main */
+}
+/* Стили для раздела ресторана */
+.hotel-restaurant {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.hotel-restaurant h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hotel-restaurant img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Стили для кнопки "Забронировать" ресторан */
+.book-restaurant-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-restaurant-button:hover {
+    background-color: #4cae4c;
+}
+/* Стили для раздела ресторана */
+.hotel-restaurant {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.hotel-restaurant h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.restaurant-content {
+    display: flex; /* Используем flexbox для размещения элементов рядом */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.restaurant-info {
+    flex: 1; /* Занимает большую часть пространства */
+    padding-right: 20px; /* Отступ между информацией и фотографиями */
+}
+
+.restaurant-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.restaurant-food-images {
+    flex: 1; /* Занимает часть пространства */
+    display: flex; /* Flex контейнер для фотографий еды */
+    flex-wrap: wrap; /* Перенос фотографий на новую строку, если не помещаются */
+    justify-content: space-around; /* Равномерное распределение фотографий */
+}
+
+.restaurant-food-images img {
+    width: 150px; /* Задаем ширину фотографий еды */
+    height: 150px; /* Задаем высоту фотографий еды */
+    object-fit: cover; /* Обрезаем фотографии, чтобы они помещались в заданные размеры */
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Стили для кнопки "Забронировать" ресторан */
+.book-restaurant-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-restaurant-button:hover {
+    background-color: #4cae4c;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .restaurant-content {
+        flex-direction: column; /* Размещаем элементы друг под другом */
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .restaurant-info {
+        padding-right: 0; /* Убираем отступ */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .restaurant-food-images {
+        justify-content: center; /* Центрируем фотографии еды */
+    }
+}
+/* Стили для кнопки "На главный" */
+.home-button {
+    background-color: #000000; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 8px 15px; /* Отступы */
+    border-radius: 5px; /* Скругление углов */
+    text-decoration: none; /* Убрать подчеркивание */
+    margin-left: 20px; /* Отступ слева (если нужно) */
+}
+
+.home-button:hover {
+    background-color: #000000; /* Цвет фона при наведении */
+}
+
+/* Стили для шапки */
+header {
+    background-color: #000; /* Черный цвет */
+    padding: 10px;
+    position: sticky; /* Фиксированная шапка */
+    top: 0;
+    z-index: 100; /* Чтобы шапка была поверх других элементов */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Максимальная ширина шапки */
+    margin: 0 auto; /* Центрирование шапки */
+  }
+  
+  .logo img {
+    max-height: 50px; /* Максимальная высота логотипа */
+  }
+  
+  .logo a {
+    color: #fff; /* Белый цвет */
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Белый цвет */
+  }
+  
+  .book-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-button:hover {
+    background-color: #4cae4c;
+  }
+  html {
+    background-color: #ffffff; /* Белый цвет */
+    /* Другие стили для html */
+  }
+  .hotel-card {
+    border: 1px solid #ccc; /* Рамка: толщина 1px, сплошная линия, серый цвет */
+    padding: 10px; /* Отступы внутри рамки */
+    margin: 10px; /* Отступы снаружи рамки */
+    border-radius: 5px; /* Скругление углов рамки */
+  }
+  /* Стили для модального окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Фиксированная позиция */
+  z-index: 1; /* Поверх всего */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включить прокрутку, если нужно */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с прозрачностью */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% от верха и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ширина 80% */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стили для формы */
+#bookingForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#bookingForm input[type="date"],
+#bookingForm input[type="number"],
+#bookingForm select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#bookingForm button[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#bookingForm button[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+/* Удаляем или комментируем существующие стили фона для body или html */
+/* body {
+    background-color: #fff;
+} */
+
+html {
+    height: 100%; /* Важно для правильного отображения фона на всю высоту */
+}
+
+body {
+    margin: 0; /* Убираем стандартные отступы */
+    height: 100%; /* Важно для правильного отображения фона на всю высоту */
+}
+
+/* Стили для контейнера фона */
+.background-container {
+    position: fixed; /* Фиксированное положение, чтобы фон оставался на месте при прокрутке */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Помещаем фон под остальной контент */
+    pointer-events: none; /* Позволяет кликать на элементы, находящиеся под фоном */
+    display: grid; /* Используем grid для разделения на 4 части */
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки равной ширины */
+    grid-template-rows: repeat(2, 1fr); /* 2 строки равной высоты */
+}
+
+.background-container::before {
+    content: "";
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background: url('hotel1.jpg') center/cover no-repeat; /* Фон для первой части */
+}
+
+.background-container::after {
+    content: "";
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: url('hotel2.jpg') center/cover no-repeat; /* Фон для второй части */
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: url('hotel1.jpg') center/cover no-repeat;
+}
+
+.background-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: url('hotel2.jpg') center/cover no-repeat;
+}
+.background-container::marker {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: url('hotel3.jpg') center/cover no-repeat;
+}
+.background-container::backdrop {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: url(https://avatars.mds.yandex.net/get-altay/10534734/2a0000018f45507ad9a0124c1bb23d7008e9/XXL_height) center/cover no-repeat;
+}
+/* Стили для слайдера */
+.hotel-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.hotel-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hotel-slider {
+    flex: 1;
+    position: relative; /*  Позиционирование для кнопок */
+    overflow: hidden; /*  Скрываем все, что выходит за границы */
+    width: 300px; /*  Фиксированная ширина слайдера */
+    height: 200px; /*  Фиксированная высота слайдера */
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /*  Анимация */
+    width: 100%; /*  Занимает всю ширину слайдера */
+    height: 100%; /*  Занимает всю высоту слайдера */
+}
+
+.slide {
+    flex-shrink: 0; /*  Не сжимать слайды */
+    width: 100%; /*  Каждый слайд занимает всю ширину */
+    height: 100%; /*  Каждый слайд занимает всю высоту */
+    object-fit: cover; /*  Масштабирование изображения с обрезкой */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /*  Полупрозрачный фон */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /*  Поверх слайдов */
+}
+
+.slider-button.prev {
+    left: 0;
+}
+
+.slider-button.next {
+    right: 0;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .hotel-container {
+        flex-direction: column;
+    }
+    .hotel-info {
+        padding-right: 0;
+    }
+    .hotel-slider {
+        width: 100%; /*  Ширина слайдера на всю ширину экрана */
+        height: 200px; /*  Высота остаётся прежней */
+    }
+}
+.hotel-slider {
+    flex: 1;
+    position: relative; /*  Позиционирование для кнопок */
+    overflow: hidden; /*  Скрываем все, что выходит за границы */
+    width: 300px; /*  Фиксированная ширина слайдера */
+    height: 250px; /*  Увеличиваем высоту слайдера */
+}
+
+.slide {
+    flex-shrink: 0; /*  Не сжимать слайды */
+    width: 100%; /*  Каждый слайд занимает всю ширину */
+    height: 250px; /*  Увеличиваем высоту слайда */
+    object-fit: cover; /*  Масштабирование изображения с обрезкой */
+}
+.booking-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking-button:hover {
+    background-color: #3e8e41; /* Более темный зеленый цвет при наведении */
+  }
+  
+  /* Стили для карточек ресторанов */
+  .restaurant-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .restaurant-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+  .booking-button {
+    /* Основные стили */
+    display: inline-block; /* Отображаем как строчный элемент с возможностью задания размеров */
+    background-color: #008CBA; /* Голубой фон */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Большие отступы для удобства нажатия */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px; /* Делаем шрифт крупнее */
+    cursor: pointer; /* Меняем вид курсора при наведении */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Скругляем углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+  }
+  
+  .booking-button:hover {
+    /* Стили при наведении */
+    background-color: #005f6b; /* Делаем фон темнее */
+  }
+  
+  /* Дополнительные стили (необязательные) */
+  .booking-button:active {
+    /* Стили при нажатии */
+    background-color: #003a42; /* Делаем фон еще темнее при клике */
+  }
+  
+  .booking-button:focus {
+    /* Стили при фокусировке */
+    outline: none; /* Убираем обводку при фокусе */
+  }
+  /* Стили для формы бронирования ресторана (как в отеле) */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="date"],
+  form input[type="time"],
+  form input[type="number"] {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  body {
+  display: flex; /* Используем flexbox */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали (если нужно) */
+  min-height: 100vh; /* Занимаем всю высоту экрана (если нужно) */
+  margin: 0; /* Убираем стандартные отступы */
+}body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Добавляем это */
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    width: 100%; /* Занимает всю доступную ширину */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 20px; /* Отступы внутри шапки (подстрой под себя) */
+    /* Остальные стили (цвет фона, текст, flexbox и т.д.) */
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Важно! */
+  }
+  /* Сброс стилей для body */
+body {
+    margin: 0; /* Убираем стандартные отступы */
+    padding: 0;
+    font-family: sans-serif; /* Или любой другой шрифт */
+  }
+  
+  /* Стили для шапки */
+  header {
+    width: 100%; /* Занимает всю ширину */
+    background-color: #333; /* Темный фон */
+    color: white; /* Белый текст */
+    padding: 20px; /* Отступы сверху и снизу */
+    position: sticky; /* Фиксируем шапку вверху */
+    top: 0; /* Прилипает к верху экрана */
+    z-index: 100; /* Отображается поверх остального контента */
+    box-sizing: border-box; /* Padding не влияет на общую ширину */
+  
+    display: flex; /* Flexbox для удобного размещения элементов */
+    justify-content: space-between; /* Логотип слева, навигация справа */
+    align-items: center; /* Выравнивание по вертикали */
+  }
+  
+  /* Стили для логотипа */
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Стили для навигации */
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  /* Стили для основного контента */
+  main {
+    padding: 20px; /* Отступы вокруг основного контента */
+    margin-top: 0; /* Убираем отступ сверху, если есть */
+  }
+  
+  /* Стили для подвала */
+  footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Шапка займёт всю ширину окна браузера */
+    z-index: 1000; /* Высокое значение, чтобы шапка была всегда на первом плане */
+  }
+  .container {
+    display: flex; /* Включаем flexbox */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    justify-content: space-between; /* Размещаем элементы по краям */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .text-content {
+    width: 60%; /* Занимает 60% ширины контейнера */
+  }
+  
+  .image-container {
+    width: 35%; /* Занимает 35% ширины контейнера */
+    text-align: right; /* Выравниваем изображение по правому краю */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Картинка не больше контейнера */
+    height: auto; /* Сохраняем пропорции */
+    vertical-align: middle; /* Выравниваем изображение по вертикали по центру */
+  }
+  /* Общие стили (добавь, если их нет) */
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  /* Стили для основного контента (main) */
+  main {
+    padding: 20px;
+  }
+  
+  /* Стили для подвала */
+  footer {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Стили для номеров (уже были, просто для справки) */
+  .rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .room {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .room ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .room li {
+    margin-bottom: 5px;
+  }
+  
+  .room .price {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .room button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Стили для разных типов номеров */
+  .room.vip {
+    border-color: #ffc107; /* Желтая рамка */
+  }
+  
+  .room.presidential {
+    border-color: #dc3545; /* Красная рамка */
+  }
+  body {
+    
+    background-size: cover; /* Растягиваем изображение на весь экран */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    background-attachment: fixed; /* Фиксируем фон при прокрутке */
+    /* Другие стили для body (цвет текста, шрифт и т.д.) */
+    margin: 0; /* Убираем стандартные отступы */
+    font-family: sans-serif;
+  }
+ 
+  main {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали (если нужно) */
+    min-height: 80vh; /* Минимальная высота, чтобы текст был по центру, даже если мало контента */
+    padding: 20px; /* Добавляем отступы */
+  }
+  
+  .content {
+    width: 80%; /* Максимальная ширина контента (измени на свой вкус) */
+    text-align: center; /* Центрируем текст внутри блока */
+    background-color: rgba(255, 255, 255, 0.8); /* Добавим полупрозрачный фон для лучшей читаемости */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .hotel-block {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center; /* Выравниваем все элементы по центру */
+  }
+  
+  .hotel-block img {
+    max-width: 100px; /* Ограничиваем ширину логотипа */
+    height: auto; /* Сохраняем пропорции */
+    margin-bottom: 10px; /* Добавляем отступ снизу */
+  }
+  /* Общие стили (уже должны быть, просто для напоминания) */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Стили для шапки (уже должны быть) */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стили для блоков отелей (уже должны быть) */
+.hotel-block {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.hotel-block img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Медиа-запрос для мобильных устройств (ширина экрана до 768px) */
+@media (max-width: 768px) {
+  /* Стили для шапки на мобильных устройствах */
+  header {
+    flex-direction: column; /* Переносим логотип и навигацию в столбец */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+  }
+
+  header nav {
+    margin-top: 10px; /* Добавляем отступ между логотипом и навигацией */
+  }
+
+  header nav a {
+    display: block; /* Делаем ссылки навигации блочными элементами */
+    margin-left: 0; /* Убираем отступ слева */
+    margin-bottom: 5px; /* Добавляем отступ снизу */
+  }
+
+  /* Стили для блоков отелей на мобильных устройствах */
+  .hotel-block {
+    margin: 10px; /* Уменьшаем отступы */
+    padding: 10px; /* Уменьшаем отступы */
+  }
+
+  /* Можно изменить размер шрифта */
+  body {
+    font-size: 14px;
+  }
+}
+
+.main-background {
+    display: block;
+}
+
+.hero {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-image: url("SaintP.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+}
+
+.hero-content {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roomsMain {
+    display: block; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Навигация */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Вводный блок */
+.intro {
+    padding: 40px;
+    background: url('https://source.unsplash.com/1600x400/?city,travel') no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 32px;
+}
+
+/* Карточки отелей */
+.hotels {
+    padding: 30px;
+}
+
+.hotel-card {
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Отзывы */
+.testimonials {
+    padding: 30px;
+    background: #f0f0f0;
+}
+
+.testimonial {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+/* Футер */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.testimonials {
+    width: 80%;
+    margin: 50px auto; /* Размещает по центру страницы */
+    text-align: center;
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+    

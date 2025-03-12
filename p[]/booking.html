@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Бронирование столика</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+      <div class="header-content">
+        
+          
+       
+          <nav>
+              <ul>
+                  <li><a href="index.html" id="mainPage">На главную</a></li>
+                  <li><a href="rooms.html" id="rooms">Номера</a></li>
+                 
+                  <li><a href="restaurant.html" id="restaurant">Ресторан</a></li>
+                  <li><a href="actions.html" id="actions">Акции</a></li>
+                  
+                  <li>
+                    <div class="social-links">
+                    
+                      <!-- Добавьте другие соц. сети -->
+                    </div>
+                  </li>
+                  <li><button id="languageButton" class="language-button">EN</button></li>
+              </ul>
+          </nav>
+          <div class="header-right">
+              
+              
+              <button class="book-button" onclick="openBookingModal()" id="bookButton">Забронировать</button>
+          </div>
+      </div>
+  </header>
+
+
+
+  <footer>
+     отели
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<body>
+  <h1>Бронирование столика</h1>
+  <h2 id="restaurantName"></h2> <!-- Здесь будет отображаться название ресторана -->
+  <!-- Здесь добавь форму бронирования -->
+  <form>
+    <!-- Поля формы (имя, телефон, дата, время, количество гостей...) -->
+    <label for="name">Ваше имя:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="phone">Ваш телефон:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+
+    <label for="date">Дата:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="time">Время:</label><br>
+    <input type="time" id="time" name="time"><br><br>
+
+    <label for="guests">Количество гостей:</label><br>
+    <input type="number" id="guests" name="guests"><br><br>
+
+    <input type="submit" value="Забронировать">
+  </form>
+  <script src="script.js"></script> <!-- Подключи JS-файл -->
+</body>
+</html>

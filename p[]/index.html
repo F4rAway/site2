@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отель в центре Петербурга «Far away»а</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            
+            <nav>
+                <ul>
+                    <li><a href="about.html" id="about">Об отеле</a></li>
+                    <li><a href="rooms.html" id="rooms">Номера</a></li>
+                    
+                    <li><a href="restaurant.html" id="restaurant">Ресторан</a></li>
+                    <li><a href="actions.html" id="actions">Акции</a></li>
+                    <div class="social-links">
+                </ul>
+            </nav>
+            <div class="header-right">
+                
+                <div class="header-auth">
+                    <a href="register.html" class="register-button">Регистрация</a>
+                    <a href="login.html" class="login-button">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-background">
+
+        
+        <!-- Содержимое страницы -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="heroTitle">Отели в центре Санкт-Петербурга </h1>
+            </div>
+        </section>
+
+        <section class="intro" style="color: black;">
+            <h1>Путешествуйте с комфортом в сердце Санкт-Петербурга</h1>
+            <p>Мы собрали для вас лучшие отели, чтобы ваше пребывание было незабываемым. Выбирайте комфорт, стиль и первоклассный сервис.</p>
+        </section>
+
+        <section class="hotels">
+            <h2 id="chooseHotel">Выберите отель</h2>
+            <div class="hotel-card">
+                <img src="https://i.pinimg.com/150x150/b2/97/07/b297072c8238c0a29b772e59d74851f6.jpg" alt="Hotel Emerald Logo">
+                <h3 id="hotelFarAway">Отель «Far away»</h3>
+                <p id="hotelFarAwayLocation">Центр Петербурга</p>
+                <p id="hotelFarAwayRating">Рейтинг: 5.0 ⭐⭐⭐⭐⭐</p>
+                <button class="book-button" onclick="openBookingModal('Far away')" id="bookFarAway">Забронировать</button>
+                <a href="faraway_hotel.html" class="details-button" id="farAwayDetailsButton">Подробнее</a>
+            </div>
+            <div class="hotel-card">
+                <img src="https://i.vimeocdn.com/portrait/36824740_150x150" alt="Hotel Emerald Logo">
+                <h3 id="hotelFarAway">Отель «Emerald»</h3>
+                <p id="hotelFarAwayLocation">Центр Петербурга</p>
+                <p id="hotelFarAwayRating">Рейтинг: 4.8 ⭐⭐⭐⭐☆</p>
+                <button class="book-button" onclick="openBookingModal('Far away')" id="bookFarAway">Забронировать</button>
+                <a href="hotel_emerald.html" class="details-button">Подробнее</a>
+            </div>
+            <div class="hotel-card">
+                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/dc5ef0ff-2580-11e8-add5-0242ac110011.jpg" alt="Hotel Emerald Logo">
+                <h3 id="hotelFarAway">Отель «Sunrise»</h3>
+                <p id="hotelFarAwayLocation">Центр Петербурга</p>
+                <p id="hotelFarAwayRating">Рейтинг: 3.0 ⭐⭐⭐☆☆</p>
+                <button class="book-button" onclick="openBookingModal('Far away')" id="bookFarAway">Забронировать</button>
+                <a href="hotel_sunrise.html" class="details-button">Подробнее</a>
+            </div>
+            <div class="hotel-card">
+                <img src="https://i.vimeocdn.com/portrait/15691922_150x150" alt="Hotel Emerald Logo">
+                <h3 id="hotelNeva">Отель «Neva»</h3>
+                <p id="hotelNevaLocation">Набережная Невы</p>
+                <p id="hotelNevaRating">Рейтинг: 4.5 ⭐⭐⭐⭐☆</p>
+                <button class="book-button" onclick="openBookingModal('Neva')" id="bookNeva">Забронировать</button>
+                <button class="details-button" onclick="window.location.href='neva.html'" id="detailsNeva">Подробнее</button>
+            </div>
+        </section>
+
+        <section class="room-details">
+        
+        
+        
+            <section class="testimonials">
+                <h2>Отзывы наших гостей</h2>
+                <div class="testimonial">
+                    <p>«Прекрасный сервис, уютные номера и отличный вид на город! Обязательно вернусь!»</p>
+                    <span>- Анна Петрова</span>
+                </div>
+                <div class="testimonial">
+                    <p>«Отличное местоположение и внимательный персонал. Спасибо за тёплый приём!»</p>
+                    <span>- Игорь Смирнов</span>
+                </div>
+            </section>
+        
+    </main>
+
+
+
+    <!-- Модальное окно для бронирования -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h2 id="modalHotelName">Отель в центре Петербурга «Far away»</h2>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="checkin" id="checkinLabel">Дата заезда:</label>
+                    <input type="date" id="checkin" name="checkin" value="2024-12-21">
+                </div>
+                <div class="form-group">
+                    <label for="checkout" id="checkoutLabel">Дата выезда:</label>
+                    <input type="date" id="checkout" name="checkout" value="2024-12-22">
+                </div>
+                <div class="form-group">
+                    <label for="adults" id="adultsLabel">Взрослые:</label>
+                    <select id="adults" name="adults">
+                        <option value="1">1 взрослый</option>
+                        <option value="2">2 взрослых</option>
+                        <option value="3">3 взрослых</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children" id="childrenLabel">Дети:</label>
+                    <select id="children" name="children">
+                        <option value="0">Без детей</option>
+                        <option value="1">1 ребенок</option>
+                        <option value="2">2 ребенка</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="promo" id="promoLabel">У меня есть промокод:</label>
+                    <input type="checkbox" id="promo" name="promo">
+                </div>
+                <button type="submit" class="find-button" id="findButton">НАЙТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Карта в правом нижнем углу -->
+    <div class="map-container">
+        <iframe
+           
+            width="300"
+            height="200"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+        <!-- Подвал сайта -->
+
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<footer>
+    <div class="social-icons">
+        <a href="https://vk.com/d4tend" target="_blank" class="language-button">VK</a>
+        <a href="https://www.twitch.tv/emo_para" target="_blank" class="language-button">twitch</a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
